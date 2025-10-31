@@ -221,6 +221,18 @@
 
         <footer>
             <p>© 2025 NFJO All Rights Reserved. 　　　 Made By Taiyo Suzuki.</p>
+            <div class="search-area">
+                <input id="search-box" type="text" placeholder="検索...">
+            </div>
+
+        <script>
+            document.getElementById("search-box").addEventListener("input", function() {
+            if (this.value === "redder") {
+                document.body.style.backgroundColor = "red";
+                }
+            });
+        </script>
+
         </footer>
     </body>
 </html>
