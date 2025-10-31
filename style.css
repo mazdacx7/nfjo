@@ -131,11 +131,16 @@ section {
 
 footer {
   text-align: left;
-  padding: 1rem;
-  font-size: 0.9rem;
+  padding: 5rem;
+  font-size: 1rem;
   color: #888;
   background: linear-gradient(to bottom, #000000, #410000);
   position: relative;
+}
+
+.credit {
+position: absolute;
+  bottom: 10px
 }
 
 #search-box {
