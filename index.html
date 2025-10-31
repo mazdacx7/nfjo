@@ -21,7 +21,10 @@
         <!--音楽部について-->
         <section id="about">
             <h2>音楽部について</h2>
-            <p>我々音楽部は～</p>
+            <p> 私たち音楽部はNFJO（North Five Jazz Orchestra）という名のビッグバンドで演奏活動をしています。<br>
+                構成楽器は様々で、トランペット・トロンボーン・サックスの管楽器隊、ギター・ベース・キーボード・ドラムのリズム隊、その他ヴァイオリン・シンセサイザーなど、多様な楽器を扱い、ファンクやフュージョン、ラテン、またはテクノなどの幅広い音楽に挑戦しています。<br>
+                日々の練習と様々な準備の成果をとくとごらんあれ！
+            </p>
         </section>
 
         <!--セットリスト-->
@@ -103,7 +106,7 @@
                     <p>
                         <strong>部長：鈴木 大洋 （E.G. | E.B. | Pno.）</strong>
                         <br>
-                        伝統は消えない。混沌とした組織の健全で誠実な部長。<br>
+                        伝統は消えない。混沌とした組織の常人のふりをしている部長。<br>
                         このサイトを作った人。航空宇宙工学コースなのに。
                     </p>
                 </div>
@@ -111,7 +114,7 @@
                 <div class="member">
                     <img src="2_rei.jpg" alt="rei">
                     <p>
-                        <strong>バンドマスター：小岩 礼 （E.G. | E.B | E.P | Pno. | Vln.）</strong>
+                        <strong>バンドマスター：小岩 礼 （E.G. | E.B. | E.P. | Pno. | Vln.）</strong>
                         <br>
                         無敵のバンマス。リハ遅刻ゼロ。主な仕事は、部活LINEで『了解！』と送ることです(全部嘘)。
                     </p>
@@ -148,7 +151,7 @@
                 <div class="member">
                     <img src="3_hinata.jpg" alt="hinata">
                     <p>
-                        <strong>灰野 陽向 （A.Sax. ）</strong>
+                        <strong>灰野 陽向 （S.Sax. | A.Sax. | B.Sax.）</strong>
                         <br>
                         最近プレイリスト改めて数えたら0から54、AからU、αからζまでありました<br>
                         合わせて82です
@@ -209,7 +212,7 @@
                 <div class="member">
                     <img src="5_ryuju.jpg" alt="ryuju">
                     <p>
-                        <strong>染谷 琉樹 （A.Sax. | Tp. | Tb. | E.P | Drs. | Syn. | DJ.）</strong>
+                        <strong>染谷 琉樹 （A.Sax. | Tp. | Tb. | E.P. | Drs. | Syn. | DJ）</strong>
                         <br>
                         高専六年目！最高学年です！<br>
                         今年が最後になるように頑張ります！<br>
@@ -220,7 +223,7 @@
         </section>
 
         <footer>
-            <p>© 2025 NFJO All Rights Reserved. 　　　 Made By Taiyo Suzuki.</p>
+            <p>© 2025 NFJO All Rights Reserved. <br> 　　Made By Taiyo Suzuki.</p>
             <div class="search-area">
                 <input id="search-box" type="text" placeholder="検索...">
             </div>
@@ -229,9 +232,16 @@
             document.getElementById("search-box").addEventListener("input", function() {
             if (this.value === "redder") {
                 document.body.style.backgroundColor = "red";
-                }
+                document.body.style.backgroundImage = "url('redder.jpg')";
+                document.body.style.backgroundSize = "cover"; /* 画面いっぱい */
+                document.body.style.backgroundRepeat = "no-repeat";
+                document.body.style.backgroundPosition = "center";
+            } else {
+                document.body.style.backgroundColor = "";
+                document.body.style.backgroundImage = "";
+            }
             });
-        </script>
+</script>
 
         </footer>
     </body>
