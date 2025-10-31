@@ -9,6 +9,13 @@ body {
     line-height: 1.8;
 }
 
+h2 {
+  color: #ca1111;
+  border-left: 4px solid #ff0000;
+  padding-left: 0.5rem;
+  text-shadow: 0 0 6px #600000;
+}
+
 header {
     text-align: center;
     background: linear-gradient(to bottom, #330000, #000);
@@ -30,10 +37,7 @@ header {
 }
 
 nav {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  flex-wrap: nowrap;
+  margin-top: 1rem;
 }
 
 nav a {
@@ -101,5 +105,26 @@ section {
   .setlist-day {
     width: 100%;
   }
+}
 
+.member-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.member {
+  background: rgba(20, 0, 0, 0.8);
+  border: 1px solid #400000;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.member img {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 8px;
+  border: 1px solid #ff0000;
+  box-shadow: 0 0 10px #400000;
 }
