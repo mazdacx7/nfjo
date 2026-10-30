@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap');
+
+body {
+    font-family: 'Noto Serif JP', serif;
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+    line-height: 1.8;
+}
+
+h2 {
+  color: #0baa0693;
+  border-left: 4px solid #0baa0693;
+  padding-left: 0.5rem;
+  text-shadow: 0 0 6px #0baa0693;
+}
+
+header {
+    text-align: center;
+    background: linear-gradient(to bottom, #0baa0693, #000);
+    padding: 1.5rem 1rem;
+    border-bottom: 1px solid #0baa0693;
+}
+
+.welcome {
+    color: #0baa0693;
+    text-shadow: 0 0 2px white;
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.nfjo {
+    color: white;
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+nav {
+  margin-top: 1rem;
+}
+
+nav a {
+  color: #0baa0693;
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav a:hover {
+    color: white;
+    text-shadow: 0 0 60px #0baa0693;
+}
+
+section {
+  padding: 2rem 1rem;
+  max-width: 800px;
+  margin: auto;
+  border-bottom: 1px solid #0baa0693;
+}
+
+.setlist-box {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.setlist-day {
+    width: 48%;
+    background: #032b015b;
+    border: 1px solid #0baa0693;
+    padding: 1rem;
+    border-radius: 8px;
+    flex: 1;
+    min-width: 220px;
+    max-width: 300px;
+}
+
+.setlist-day h3 {
+    margin: 0 0 12px 0;
+    font-size: 1.3rem;
+    text-align: center;
+    color: #0baa0693;
+}
+
+.setlist-day ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.setlist-day li {
+    margin-bottom: 6px;
+    list-style: none;
+}
+
+.setlist-day li::before {
+    content: "• ";
+    color: #888;
+}
+
+@media (max-width: 600px) {
+  .setlist-day {
+    width: 100%;
+  }
+}
+
+.member-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.member {
+  background: #032b015b;
+  border: 1px solid #0baa0693;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.member img {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 8px;
+  border: 1px solid #0baa0693;
+  box-shadow: 0 0 10px #400000;
+}
+
+footer {
+  text-align: left;
+  padding: 5rem;
+  font-size: 1rem;
+  color: #888;
+  background: linear-gradient(to bottom, #000000, #0baa0693);
+  position: relative;
+}
+
+.credit {
+position: absolute;
+  bottom: 10px
+}
+
+#search-box {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
